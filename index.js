@@ -7,9 +7,11 @@ var productsRoutes = require("./routes/products");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/views"));
 
 app.get("/", function (req, res) {
-    res.json({ message: 'this is a fom home page json app' });
+    res.sendFile("index.html");
 });
 
 

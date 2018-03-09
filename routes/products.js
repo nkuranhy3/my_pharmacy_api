@@ -14,7 +14,7 @@ router.get("/", function (req, res) {
     });
 });
 
-
+/*
 db.Product.create({
   productName: "blod tonic",
   price: 290,
@@ -22,7 +22,7 @@ db.Product.create({
 
 });
 
-
+*/
 /* create new data in the database */
 
 router.post("/", function (req, res) {
